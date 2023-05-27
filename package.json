@@ -2,7 +2,7 @@
   "name": "@terence-jee/authentication-service",
   "description": "CSS Authentication Service",
   "main": "/src/index.ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "scripts": {},
   "dependencies": {

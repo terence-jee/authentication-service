@@ -1,5 +1,5 @@
 //this needs to run and initialize before you can use AuthenticationService
-
+import { Injectable } from '@angular/core';
 import { KeycloakService } from 'keycloak-angular';
 //import KeycloakAdminClient from 'keycloak-admin';
 
@@ -9,6 +9,9 @@ interface KeycloakInitOptions {
 }
 
 //don't need to worry about doing this because it's being initialized on startup in the module.ts file
+@Injectable({
+  providedIn: 'root',
+})
 export class KeycloakInitializer {
   config = {};
   environmentConfig = {};
