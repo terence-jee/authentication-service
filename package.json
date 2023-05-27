@@ -1,7 +1,7 @@
 {
   "name": "@terence-jee/authentication-service",
   "description": "CSS Authentication Service",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -21,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.22.3",
     "@rollup/plugin-json": "^6.0.0",
     "@types/jest": "^29.5.1",
     "@typescript-eslint/eslint-plugin": "^5.59.5",
