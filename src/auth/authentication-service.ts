@@ -1,6 +1,6 @@
+import { Injectable } from '@angular/core';
 import { KeycloakService } from 'keycloak-angular';
 import { Router } from '@angular/router';
-import { Injectable } from '@angular/core';
 import { AuthUserProfile } from '../entities/auth-user-profile.interface';
 import { IdpDataAlbertaCa, AlbertaCaAccountTypes, AlbertaCaGenderTypes } from '../entities/idp-data-albertaca';
 import { KeycloakInstance } from 'keycloak-js';
@@ -17,7 +17,6 @@ dayjs.extend(timezonePlugin);
   providedIn: 'root',
 })
 export class AuthenticationService {
-  id;
   constructor(private keycloakService: KeycloakService, private router?: Router) {}
 
   getUserProfile(attributes?: Array<string>) {
@@ -188,36 +187,6 @@ export class AuthenticationService {
         });
     });
   }
-
-  // async getContextUserProfile() {
-  //   const profile = await this.getUserProfileWithRoles();
-  //   const user = {
-  //     _id: profile.userid,
-  //     name: `${profile.firstName} ${profile.lastName}`,
-  //     roles: profile.roles,
-  //     primaryRole: getPrimaryRole(profile.roles)?.displayValue ?? null,
-  //     title: profile.title,
-  //     location: profile.location ?? 'Alberta',
-  //     email: profile.email,
-  //     office: this.getOfficeInfo(profile._rawProfile),
-  //     phone: profile._rawProfile?.phone ?? null,
-  //     agency: profile._rawProfile?.agency ?? null,
-  //     district: profile._rawProfile?.district ?? null,
-  //   } as User;
-  //   return user;
-  // }
-
-  // private getOfficeInfo(data): Office {
-  //   if (!data.address && !data.officeAddress) return null;
-  //   return {
-  //     streetAddress: data.address?.street_address ?? data.officeAddress ?? null,
-  //     city: data.address?.locality ?? data.officeCity ?? null,
-  //     province: 'Alberta',
-  //     postalCode: data.address?.postal_code ?? data.officePostalCode ?? null,
-  //     phone: data.phone ?? data.officePhone ?? null,
-  //     fax: data.fax ?? data.officeFax ?? null,
-  //   };
-  // }
 
   async getIdpDataAlbertaCa(): Promise<IdpDataAlbertaCa> {
     const keycloakInstance = this.getKeycloakInstance();
