@@ -1,7 +1,7 @@
 {
   "name": "@terence-jee/authentication-service",
   "description": "CSS Authentication Service",
-  "version": "1.0.0",
+  "version": "1.0.14",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -10,7 +10,8 @@
     "test": "jest",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint src/",
-    "deploy": "npm run build && npm run copy && npm publish ./dist"
+    "deploy": "npm run build && npm run copy && npm publish ./dist",
+    "prebuild": "npm --no-git-tag-version version patch"
   },
   "repository": {
     "type": "git",
