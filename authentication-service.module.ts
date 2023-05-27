@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { AuthenticationService } from './auth/authentication-service';
-import { KeycloakInitializer } from './auth/keycloak-initializer';
+import { AuthenticationService } from './src/auth/authentication-service';
+import { KeycloakInitializer } from './src/auth/keycloak-initializer';
 import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 
 @NgModule({
