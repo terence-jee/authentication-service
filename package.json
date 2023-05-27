@@ -2,10 +2,11 @@
   "name": "@terence-jee/authentication-service",
   "description": "CSS Authentication Service",
   "main": "index.ts",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "license": "MIT",
   "scripts": {
-    "prebuild": "npm --no-git-tag-version version patch"
+    "prebuild": "npm --no-git-tag-version version patch",
+    "build": "ng build"
   },
   "dependencies": {
     "@angular/cdk": "14.0.4",
