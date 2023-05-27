@@ -38,6 +38,8 @@
   "dependencies": {
     "@angular/core": "14.0.4",
     "@angular/router": "14.0.4",
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.2",
     "@keycloak/keycloak-admin-client": "^15.0.2",
     "dayjs": "^1.10.4",
     "keycloak-admin": "^1.14.17",
