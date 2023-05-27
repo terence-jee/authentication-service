@@ -2,7 +2,7 @@
   "name": "@terence-jee/authentication-service",
   "description": "CSS Authentication Service",
   "main": "index.ts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "scripts": {
     "prebuild": "npm --no-git-tag-version version patch"
