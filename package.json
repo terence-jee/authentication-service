@@ -1,7 +1,7 @@
 {
   "name": "@terence-jee/authentication-service",
   "description": "CSS Authentication Service",
-  "version": "1.0.37",
+  "version": "1.0.38",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
