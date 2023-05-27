@@ -1,13 +1,17 @@
 {
-  "extends": "./tsconfig.base.json",
-  "files": [],
-  "include": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "declaration": true,
+        "outDir": "./dist",
+        "strict": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "importHelpers": true,
+        "baseUrl": "."
     },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ]
+    "include": ["src"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
 }
