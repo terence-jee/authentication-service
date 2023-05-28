@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
         "rootDir": ".",
-        "sourceMap": true,
-        "declaration": false,
+        // "sourceMap": true,
+        "declaration": true,
         "moduleResolution": "node",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
@@ -16,7 +16,10 @@
         "strictPropertyInitialization": false,
         "noPropertyAccessFromIndexSignature": false,
         "outDir": "./dist",
-        "baseUrl": "."
+        "baseUrl": ".",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
     },
     "include": ["src"],
     "exclude": ["node_modules", "**/*.spec.ts"]
