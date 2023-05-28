@@ -1,9 +1,9 @@
 {
   "name": "@terence-jee/authentication-service",
   "description": "CSS Authentication Service",
-  "version": "1.0.45",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "1.0.46",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "tsc",
     "copy": "cp package.json dist/ && cp README.md dist/",
