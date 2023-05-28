@@ -13,9 +13,10 @@
         "lib": ["es2017", "dom"],
         "skipLibCheck": true,
         "skipDefaultLibCheck": true,
-        "baseUrl": "./",
         "strictPropertyInitialization": false,
         "noPropertyAccessFromIndexSignature": false,
+        "outDir": "./dist",
+        "baseUrl": "."
     },
     "include": ["src"],
     "exclude": ["node_modules", "**/*.spec.ts"]
