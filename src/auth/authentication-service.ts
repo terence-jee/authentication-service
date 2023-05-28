@@ -5,9 +5,9 @@ import { AuthUserProfile } from '../entities/auth-user-profile.interface';
 import { IdpDataAlbertaCa, AlbertaCaAccountTypes, AlbertaCaGenderTypes } from '../entities/idp-data-albertaca';
 import { KeycloakInstance } from 'keycloak-js';
 import { replaceAll } from '../utils/utils';
-import * as dayjs from 'dayjs';
-import * as utcPlugin from 'dayjs/plugin/utc';
-import * as timezonePlugin from 'dayjs/plugin/timezone';
+import dayjs from 'dayjs';
+import utcPlugin from 'dayjs/plugin/utc';
+import timezonePlugin from 'dayjs/plugin/timezone';
 dayjs.extend(utcPlugin);
 dayjs.extend(timezonePlugin);
 
